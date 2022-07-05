@@ -1,0 +1,11 @@
+{% extends 'AppCocder/padre.html' %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+    <h1>👨‍💼</h1>
+    
+    <a class="navbar-brand" href="{% url 'EmpleadoFormulario' %}">Cargar empleado</a> 
+    <a class="navbar-brand" href="{% url 'BuscadorEmpleados' %}">Buscar empleados</a> 
+    <a class="navbar-brand" href="{% url 'List_e' %}">Ver listado de empleados</a> 
+
+{% endblock contenidoQueCambia %}

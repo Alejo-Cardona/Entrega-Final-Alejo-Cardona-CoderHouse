@@ -1,0 +1,47 @@
+{% extends 'AppCoder/padre.html' %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+    <!-- aca adentro pones todo el codigo que queres que sea diferente a el del padre -->
+    
+        
+    
+    <h3>{{mensaje}}</h3>
+    
+
+
+
+        <section class="features-icons bg-light text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            
+                            <p style="font-size: 3cm;">🏎</p>
+                            <h3><a class="navbar-brand" href="{% url 'List'%}">Todos los autos</a></h3>
+                            <p class="lead mb-0">Mire los autos que tenemos!</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            
+                            <p style="font-size: 3cm;">🤵‍♂️</p>          
+                            <h3><a class="navbar-brand" href="{% url 'List_c'%}">Clientes</a></h3>
+                            <p class="lead mb-0">Mire todos los clientes!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                            
+                            <p style="font-size: 3cm;">👨‍💼</p>     
+                            <h3><a class="navbar-brand" href="{% url 'List_e'%}">Empleados</a></h3>
+                            <p class="lead mb-0">Mire todos los empleados!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+                            
+{% endblock contenidoQueCambia %}

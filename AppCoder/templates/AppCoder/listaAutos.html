@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ver listado de autos</title>
+</head>
+<body>
+    
+    
+    {% for auto in autos%}
+        <li>{{auto}}</li>
+    {% endfor %}
+    <a class="navbar-brand" href="{% url 'AutosFormulario' %}">Cargar auto</a> 
+    <li class="list-inline-item" style="color: white;">⋅</li>
+        
+    <a class="navbar-brand" href="{% url 'Inicio' %}">Inicio</a> 
+</body>
+</html>

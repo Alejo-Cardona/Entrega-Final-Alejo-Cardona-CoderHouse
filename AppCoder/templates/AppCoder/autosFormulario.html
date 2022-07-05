@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario creador autos</title>
+</head>
+<body>
+
+    {% if mi_formulario.errors %}
+    <p style="color: firebrick;"> ESTAN MAL LOS DATOS</p>
+{% endif %}
+
+    <form action="" method= 'post'> {% csrf_token %}
+
+        <!-- <p>Marca: <input type="text" name = "marca"></p>
+        <p>Modelo: <input type="text" name = "modelo"></p>
+        <p>Motor: <input type="number"name="motor"></p>
+         -->
+         <table>
+
+            {{mi_formulario.as_table }}
+
+        </table>
+
+        <input type="submit" value="Crear">
+
+        <a class="navbar-brand" href="{% url 'Inicio' %}">Inicio</a> 
+        
+      
+
+
+    </form>
+</body>
+</html>
